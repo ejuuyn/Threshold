@@ -197,3 +197,40 @@ d[d %% 2 == 0]
 d.20[-5]
 
 d.20[-c(5,7,9)]
+
+d1 <- 1:50
+d2 <- 51:100
+
+d1
+d2
+
+d1+d2
+
+d2-d1
+
+d1*d2
+
+d2/d1
+
+sum(d1)
+
+sum(d2)
+
+max(d1)
+
+min(d2)
+
+max(d2)
+
+average(d2)
+
+mean(d1)
+
+mean(d2)
+
+mean(d2) - mean(d1)
+
+sort(d1, decreasing = TRUE)
+
+
+
