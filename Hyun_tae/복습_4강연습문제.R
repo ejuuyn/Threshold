@@ -4,6 +4,7 @@
 # 
 
 
+
 #과제 4-1
 edu <- infert[,"education"]
 edu
@@ -55,6 +56,7 @@ barplot(t)
 
 #한번에 두개
 par(mfrow=c(1,1))
+par(mfrow=c(1,2)) #par가 나누는 거였구나! -> 1행 2열로 만듭니다!
 hist(mtcars$wt)
 barplot(table(mtcars$cyl), main = "barplot of mtcars$cyl")
 barplot(table(mtcars$gear), main = "barplot of mtcars$gear")
@@ -64,3 +66,7 @@ boxplot(mtcars$wt)
 
 boxplot(mtcars$disp)
 summary(mtcars$disp)
+
+head(state.x77)
+st.income <- state.x77[,"Income"]
+boxplot(st.income, yalb="Income value")
