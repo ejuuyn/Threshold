@@ -1,7 +1,6 @@
 # matrix와 data frame는 2차원 데이터를 저장
 # vector는 1차원 데이터를 저장히기 위한 자료구조
 # data.frame 열 데이터 뽑는 방법
-# 
 
 
 
@@ -55,7 +54,6 @@ t <- table(mtcars$cyl)
 barplot(t)
 
 #한번에 두개
-par(mfrow=c(1,1))
 par(mfrow=c(1,2)) #par가 나누는 거였구나! -> 1행 2열로 만듭니다!
 hist(mtcars$wt)
 barplot(table(mtcars$cyl), main = "barplot of mtcars$cyl")
