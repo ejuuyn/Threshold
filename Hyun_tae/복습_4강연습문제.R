@@ -42,3 +42,25 @@ hist(score,
 #과제 4-3
 mtcars
 head(mtcars)
+require(graphics)
+mean(mtcars$wt)
+median(mtcars$wt)
+mean(mtcars$wt, trim = .15)
+sd(mtcars$wt)
+
+summary(mtcars$wt)
+
+t <- table(mtcars$cyl)
+barplot(t)
+
+#한번에 두개
+par(mfrow=c(1,1))
+hist(mtcars$wt)
+barplot(table(mtcars$cyl), main = "barplot of mtcars$cyl")
+barplot(table(mtcars$gear), main = "barplot of mtcars$gear")
+
+par(mfrow=c(1,1))
+boxplot(mtcars$wt)
+
+boxplot(mtcars$disp)
+summary(mtcars$disp)
